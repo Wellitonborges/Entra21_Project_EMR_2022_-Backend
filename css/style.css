@@ -1,0 +1,55 @@
+footer::after {
+
+    content: "© Project EMR - Todos os direitos Reservados ENTRA21";
+}
+
+body{
+    position: relative;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+  
+}
+.grid-template {
+    grid-template-areas:
+        "header header header header header header header header header header header header "
+        "sidenav content content content content content content content content content content content"
+        "sidenav footer footer footer footer footer footer footer footer footer footer footer";
+}
+.footer {
+    grid-area: footer;
+
+}
+.sidenav {
+    grid-area: sidenav;
+    height: 100vh;
+    background-image: linear-gradient(red, purple, white);
+}
+.content {
+    grid-area: content;
+    padding: 5px;
+    background-image: linear-gradient(yellow, darkgray , white);
+    height: 95vh;
+}
+.grid {
+
+    display: grid;
+    margin: 0 auto;
+    border: 1px solid#ccc;
+    gap:1px ;
+}
+.header {
+    grid-area: header;
+    padding: 4px;
+    background: darkgray;
+
+}
+.item {
+    font-size: clamp(1em, 1em+ 1vw, 1.5em);
+}
+
+header img {
+    width: 30px;
+    padding: 0px;
+}
+
